@@ -1,4 +1,8 @@
+import { useEffect } from "react";
 const MenuSkeleton = ()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <>
         <div className="pt-28 min-h-lvh">
