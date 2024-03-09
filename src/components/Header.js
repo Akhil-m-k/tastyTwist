@@ -79,16 +79,16 @@ const Header = () => {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <Link
               to="/cart"
-              className="relative p-1 hover:text-orange-600 focus:outline-none mx-4"
+              className="relative p-1 hover:text-orange-600 focus:outline-none pt-3 mx-4"
             >
               <i className="text-xl fa-solid fa-cart-shopping"></i>
-              <span className="absolute -right-1.5 -top-0.5 rounded-full text-center text-white h-5 w-5 bg-red-600 flex items-center justify-center">
+              <span className="absolute -right-1.5 top-1.5 rounded-full text-center text-white h-5 w-5 bg-red-600 flex items-center justify-center">
                 <span data-testid="cart" >{cartItems.length}</span>
               </span>
             </Link>
 
             {/* Profile dropdown */}
-            <div className="relative ml-3">
+            <div className="relative ml-3 pt-1 ">
               <div>
                 <button
                   type="button"
