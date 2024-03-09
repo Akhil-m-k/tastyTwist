@@ -3,6 +3,7 @@ import { clearCart, addItem, removeItem, removeDuplicateItem } from "../utils/ca
 import EmtyCart from "./EmtyCart";
 import { ITEM_IMG_CDN_URL } from "../config";
 import dummyImg from "../../public/images/dummy.png";
+import {useEffect} from "react";
 
 const Cart = () => {
   const items = useSelector((store) => store.cart.items);
@@ -13,6 +14,9 @@ const Cart = () => {
       cartItems.push(item);
     }
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const dispatch = useDispatch();
   const addItems = (item) => {
     dispatch(addItem(item));
