@@ -5,7 +5,12 @@ module.exports = {
     "./index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        'custom-sm': '0 0px 10px rgba(0, 0, 0, 0.5)',
+        // Add more custom shadow sizes as needed
+      },
+    },
   },
   plugins: [],
 }
