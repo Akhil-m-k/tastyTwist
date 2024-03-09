@@ -1,10 +1,13 @@
 import { useRouteError } from "react-router-dom"
 import errorGif from "../../public/images/dribbble_1.gif";
 import { Link } from 'react-router-dom';
+import {useEffect} from "react";
 
 const Error = ()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const err = useRouteError();
-    console.log(err);
     return (
         <div className="h-lvh grid place-items-center ">
             <div className="flex justify-center items-center flex-col">
