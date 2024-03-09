@@ -1,11 +1,14 @@
 import IMG_ABOUT from "../../public/images/burger-image.png"
 import FOUNDER_IMG from "../../public/images/founder.jpg"
 import { Link } from "react-router-dom"
+import {useEffect} from "react";
 
 const About =()=>{
-
+useEffect(() => {
+    window.scrollTo(0, 0);
+    }, []);
 return(
-    <div className="min-h-lvh mb-3">
+    <div className="min-h-lvh mb-4">
         <div className=" bg-gray-800 pb-5">
             <div className="pt-28 grid grid-cols-1 md:grid-cols-2 place-items-center max-w-screen-xl mx-auto px-8">
                 <h1 className="text-5xl font-bold text-white leading-normal pb-5 md:pb-0 text-center lg:text-start">Welcome to The world of <br /><span className="bg-orange-400 text-white px-2 rounded-md">Tasty & Twist</span></h1>
