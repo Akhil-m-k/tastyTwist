@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
+import {useEffect} from "react";
+
 const SignUp = ()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
   <div className="flex flex-col items-center justify-center px-6  mx-auto  min-h-screen  pt-28 lg:py-0">
       <div className="w-full bg-white rounded-lg shadow-lg dark:border md:mt-0 sm:max-w-md xl:p-0 ">
