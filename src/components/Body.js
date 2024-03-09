@@ -31,6 +31,7 @@ const Body =()=>{
 
     useEffect(()=>{
         getRestaurants(setAllRestaurants,setFilteredRestaurants);
+        window.scrollTo(0, 0);
     },[]);
    
     const isOnline = useOnline();
