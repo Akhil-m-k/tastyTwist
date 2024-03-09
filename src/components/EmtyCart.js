@@ -1,7 +1,11 @@
 import CHIMMENY_IMG from "../../public/images/empty cart.avif"
 import {Link} from "react-router-dom";
+import {useEffect} from "react";
 
 const EmtyCart = ()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <div className="grid place-items-center min-h-screen pt-28">
         <div className="flex flex-col items-center gap-3">
