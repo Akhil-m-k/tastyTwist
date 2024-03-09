@@ -123,7 +123,7 @@ const RestaurantMenu = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl py-5 mx-auto sm:px-10 mt-4 mb-8" key={2}>
+      <div className="max-w-screen-xl py-5 px-6 mx-auto sm:px-10 mt-4 mb-8" key={2}>
         {restauroMenu.map((restauro, i) => {
           if (restauro.card.card.itemCards) {
             return (
