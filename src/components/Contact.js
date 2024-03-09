@@ -1,4 +1,8 @@
+import {useEffect} from "react";
 const Contact = ()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
 <section className="bg-white  pt-28 min-h-screen ">
 <iframe className="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290568.5387146397!2d76.14943971072084!3d9.983134465237178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e1!3m2!1sen!2sin!4v1709828436932!5m2!1sen!2sin"  height="450"  allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
