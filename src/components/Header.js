@@ -6,7 +6,7 @@ import DUMMY_AVATAR from "../../public/images/dummy-avatar.jpeg"
 
 const Logo = () => (
   <Link to="/" className="navbar-brand">
-    <img data-testid="logo" src={logo} className=" h-11 w-10 sm:h-13 sm:w-12" alt="logo image" />
+    <img data-testid="logo" src={logo} className=" h-11 w-10 sm:h-14 sm:w-12" alt="logo image" />
   </Link>
 );
 
