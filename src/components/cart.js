@@ -37,7 +37,7 @@ const Cart = () => {
   return items.length === 0 ? (
     <EmtyCart />
   ) : (
-    <div className="min-h-screen bg-gray-100 pt-28">
+    <div className="min-h-screen bg-gray-100 pt-28  mb-3">
       <h1 className="mb-10 text-center text-3xl font-bold">Cart Items</h1>
       <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
         <div className="rounded-lg md:w-2/3">
