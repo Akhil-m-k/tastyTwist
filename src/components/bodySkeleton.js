@@ -1,5 +1,8 @@
-
+import { useEffect } from "react";
 const CardSkeleton = ()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return(
     <div className="card-section min-h-lvh max-w-screen-xl pb-10 sm:mx-auto flex flex-col justify-center pt-28" >
         <div className="mb-4 pb-2 scroll-element flex max-w-full mx-auto overflow-auto xl:overflow-hidden lg gap-8  relative items-center justify-between">
