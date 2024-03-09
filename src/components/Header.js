@@ -6,7 +6,7 @@ import DUMMY_AVATAR from "../../public/images/dummy-avatar.jpeg"
 
 const Logo = () => (
   <Link to="/" className="navbar-brand">
-    <img data-testid="logo" src={logo} className="h-13 w-12" alt="logo image" />
+    <img data-testid="logo" src={logo} className=" h-11 w-10 sm:h-13 sm:w-12" alt="logo image" />
   </Link>
 );
 
@@ -26,7 +26,7 @@ const Header = () => {
   setIsProfileMenuOpen(false);
  }
   return (
-    <nav className="bg-white border shadow-md py-3 fixed top-0 left-0 right-0 z-10">
+    <nav className="bg-white border shadow-md py-1 sm:py-3 fixed top-0 left-0 right-0 z-10">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -114,10 +114,10 @@ const Header = () => {
                   aria-labelledby="user-menu-button"
                   tabIndex="-1"
                 >
-                  <Link to="/login" className="block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="user-menu-item-2">
+                  <Link to="/login" onClick={navReload} className="block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="user-menu-item-2">
                     Login
                   </Link>
-                  <Link to="/signUp" className="block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="user-menu-item-2">
+                  <Link to="/signUp" onClick={navReload} className="block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="user-menu-item-2">
                     SignUP
                   </Link>
                 </div>
