@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux';
 import { useState} from 'react';
 import DUMMY_AVATAR from "../../public/images/dummy-avatar.jpeg"
 
-const Logo = () => (
-  <Link to="/" className="navbar-brand">
+const Logo = ({navReload}) => (
+  <Link to="/" onClick={navReload} className="navbar-brand">
     <img data-testid="logo" src={logo} className=" h-11 w-10 sm:h-14 sm:w-12" alt="logo image" />
   </Link>
 );
@@ -60,7 +60,7 @@ const Header = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-between">
             <div className="flex flex-shrink-0 items-center">
-              <Logo />
+              <Logo navReload ={navReload}/>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -80,6 +80,7 @@ const Header = () => {
             <Link
               to="/cart"
               className="relative p-1 hover:text-orange-600 focus:outline-none pt-3 mx-4"
+              onClick={navReload}
             >
               <i className="text-xl fa-solid fa-cart-shopping"></i>
               <span className="absolute -right-1.5 top-1.5 rounded-full text-center text-white h-5 w-5 bg-red-600 flex items-center justify-center">
