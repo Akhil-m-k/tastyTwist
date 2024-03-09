@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.shimmer{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(100deg,rgba(255,255,255,0)20%,rgba(255,255,255,0.5)50%,rgba(255,255,255,0)80%);
+    animation: skeleton-loading 2s linear infinite alternate;
+}
+
+.scroll-element::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .scroll-element {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+@keyframes skeleton-loading{
+0%{
+    transform:translateX(-300%);
+}
+100%{
+   transform:translateX(300%);
+}
+}
